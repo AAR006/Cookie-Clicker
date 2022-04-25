@@ -15,6 +15,9 @@ p {
     width: 50%;
     height: 90px;
 }
+.Output * {
+    user-select: none
+}
 .Container {
     height: 100%;
     width: 100%;
