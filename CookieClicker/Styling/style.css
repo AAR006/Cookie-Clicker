@@ -20,7 +20,6 @@ p {
 }
 img {
     user-select: none;
-    pointer-events: none;
 }
 .Container {
     height: 100%;
