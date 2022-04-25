@@ -10,6 +10,8 @@ let clickReg;
 let timer;
 let CountdownTime;
 
+let SecurityCheck;
+
 function setup(){
     clicks = 0;
     CountdownTime = 30;
@@ -46,11 +48,17 @@ function Countdown() {
 
 function timeup(){
     console.log("Timeup");
+    SecurityCheck = clicks
     formEl.style.display = "";
     formContainerEl.classList.remove("hide");
     cookieEl.removeEventListener("click", Click);
 }
 formEl.addEventListener("submit", (e)=>{
+    if (clicks != SecurityCheck || clicks > 1000) {
+        alert("Suspicious Activity 🤡");
+        setup();
+        return
+    }
     e.preventDefault();
     sendData(formEl, 1, clicks);
     setup();
