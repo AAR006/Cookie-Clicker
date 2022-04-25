@@ -18,6 +18,10 @@ p {
 .Output * {
     user-select: none
 }
+img {
+    user-select: none;
+    pointer-events: none;
+}
 .Container {
     height: 100%;
     width: 100%;
