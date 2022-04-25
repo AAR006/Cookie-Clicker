@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Clicker</title>
+    <link rel="stylesheet" href="/Styling/style.css">
+</head>
+<body>
+    <div class="Background"></div>
+    <div class="Container">
+        <div class="TheCookieContainer">
+            <img src="/Content/Main/Cookie.png" alt="Cookie" Id="TheCookie">
+            <div class="Output">
+                <p id="CountdownOutput">Countdown: </p>
+                <p id="ClickOutput">Clicks: </p>
+            </div>
+        </div>
+        <div class="FormAlign">
+            <div id="FormContainer" class="hide">
+                <form id="form">
+                    <label for="navn">Navn: </label><input type="text" name="navn"><br>
+                    <label for="tlf">TLF (Trengs ikke): </label><input type="tel" name="tlf"><br>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+        </div>
+    <script src="http://db.cookie/js/webapi.js"></script>
+    <script src="Script/Script.js"></script>
+</body>
+</html>
